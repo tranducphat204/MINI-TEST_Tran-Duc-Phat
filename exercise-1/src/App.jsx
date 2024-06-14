@@ -6,12 +6,12 @@ import { ENGLISH_RESULTS } from "./data";
 function App() {
   return (
     <>
-      <Header batchName="Fake batch name" />
+      <Header batchName="Fake batch name"></Header>
 
       <main className="scores-container">
-        <Scores courseName="HTML" courseResult={JAVA_RESULTS} />
-        <Scores courseName="PYTHON" courseResult={PYTHON_RESULTS} />
-        <Scores courseName="ENGLISH" courseResult={ENGLISH_RESULTS} />
+        <Scores courseName="HTML" courseResult={JAVA_RESULTS} ></Scores>
+        <Scores courseName="PYTHON" courseResult={PYTHON_RESULTS} ></Scores>
+        <Scores courseName="ENGLISH" courseResult={ENGLISH_RESULTS} ></Scores>
       </main>
     </>
   );

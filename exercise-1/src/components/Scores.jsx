@@ -1,4 +1,7 @@
-function Scores({ courseName }, courseResult) {
+function Scores({
+  courseName,
+  courseResult: [{ firstName, lastName, score }],
+}) {
   return (
     <div className="scores">
       <h1>{courseName}</h1>
@@ -12,12 +15,11 @@ function Scores({ courseName }, courseResult) {
           </tr>
         </thead>
         <tbody>
-          {courseResult.map((index) => {
-            key = index;
+          {courseResult.map(() => {
             <tr>
-              <td>{courseResult.firstName}</td>
-              <td>{courseResult.lastName}</td>
-              <td>{courseResult.score}</td>
+              <td>{firstName}</td>
+              <td>{lastName}</td>
+              <td>{score}</td>
             </tr>;
           })}
         </tbody>
